@@ -3,8 +3,8 @@ import React from 'react';
 
 function Box({ img, heading, content, time, level }) {
     return (
-        <div className='w-52 h-auto bg-slate-300 gap-4 space-y-2 items-center text-center flex flex-col justify-between hover:border-10 hover:border-gray-900 hover:bg-slate-400 hover:text-white cursor-pointer'>
-            {img && <img src={img} alt="Course Logo" />} 
+        <div className='w-52 h-auto rounded-xl bg-slate-300 gap-4 space-y-2 items-center text-center flex flex-col justify-between hover:border-10 hover:border-gray-900 hover:bg-slate-400 hover:text-white cursor-pointer'>
+            {img  && <img className='rounded-xl' src={img} alt="Course Logo" />} 
             <div className='font-bold'>{heading}</div>
             <div>{content}</div>
             <div className='flex flex-row space-x-1 mb-2'>
